@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Certificate Generator</title>
+    <link rel="stylesheet" href="build/assets/app-BljPXFGv.css">
+    <style>
+        body { margin: 0; padding: 0; }
+        #loading { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh;
+            background: #f5f5f5;
+            font-family: Segoe UI, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading"><p>Starting AutoCert...</p></div>
+    <div id="app"></div>
+    <script>
+        async function waitForServer(url, maxRetries = 20, delayMs = 300) {
+            for (let i = 0; i < maxRetries; i++) {
+                try {
+                    const response = await fetch(url, { method: 'HEAD' });
+                    if (response.ok || response.status < 500) {
+                        window.location.href = url;
+                        return;
+                    }
+                } catch (e) {}
+                await new Promise(resolve => setTimeout(resolve, delayMs));
+            }
+            document.getElementById('loading').innerHTML = '<div style="text-align:center"><h2>AutoCert failed to start</h2><p>PHP server not found. Ensure PHP is in PATH.</p></div>';
+        }
+        waitForServer('http://127.0.0.1:8000');
+    </script>
+    <script type="module" src="build/assets/app-DIuewKhF.js"></script>
+</body>
+</html>

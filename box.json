@@ -1,0 +1,27 @@
+{
+    "base-path": ".",
+    "chmod": "0755",
+    "directories": [
+        "app",
+        "bootstrap",
+        "config",
+        "database/migrations",
+        "database/seeders",
+        "resources/views",
+        "resources/css",
+        "resources/js",
+        "routes",
+        "storage",
+        "vendor"
+    ],
+    "files": [
+        ".env",
+        ".gitattributes",
+        "artisan",
+        "composer.json",
+        "package.json",
+        "vite.config.js"
+    ],
+    "output": "HRCert.phar",
+    "shebang": "#!/usr/bin/env php"
+}
