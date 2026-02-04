@@ -22,6 +22,6 @@
         "package.json",
         "vite.config.js"
     ],
-    "output": "HRCert.phar",
+    "output": "AutoCert.phar",
     "shebang": "#!/usr/bin/env php"
 }

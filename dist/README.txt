@@ -4,7 +4,7 @@ A standalone Windows application for managing and generating HR certificates.
 
 ## Quick Start
 
-1. **Double-click** HRCert.exe to launch the application
+1. **Double-click** AutoCert.exe to launch the application
 2. The app will:
    - Check for PHP installation
    - Set up the application automatically
@@ -19,8 +19,8 @@ A standalone Windows application for managing and generating HR certificates.
 
 ## First Time Setup
 
-When you first run HRCert.exe:
-- It will copy the application to: C:\Users\[YourUsername]\AppData\Roaming\HRCert
+When you first run AutoCert.exe:
+- It will copy the application to: C:\Users\[YourUsername]\AppData\Roaming\AutoCert
 - It will install required dependencies automatically
 - The database will be initialized
 
@@ -39,7 +39,7 @@ If you get a "PHP not found" error:
 1. Install PHP from: https://windows.php.net/download/
 2. During installation, choose to add PHP to your PATH
 3. Restart your computer
-4. Run HRCert.exe again
+4. Run AutoCert.exe again
 
 ### Port Already in Use
 If port 8000 is already in use:
@@ -48,8 +48,8 @@ If port 8000 is already in use:
 
 ### Clear Application Data
 To reset the application:
-1. Delete the folder: C:\Users\[YourUsername]\AppData\Roaming\HRCert
-2. Run HRCert.exe again
+1. Delete the folder: C:\Users\[YourUsername]\AppData\Roaming\AutoCert
+2. Run AutoCert.exe again
 
 ## Support
 

@@ -4,8 +4,8 @@ setlocal enabledelayedexpansion
 REM HR Certificate Manager - Standalone Executable Launcher
 REM This script extracts and runs the PHAR archive
 
-set APP_DIR=%APPDATA%\HRCert
-set PHAR_FILE=%~dp0HRCert.phar
+set APP_DIR=%APPDATA%\AutoCert
+set PHAR_FILE=%~dp0AutoCert.phar
 set EXTRACTED_DIR=%APP_DIR%\extracted
 
 REM Create directories if they don't exist

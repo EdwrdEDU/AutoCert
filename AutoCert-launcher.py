@@ -101,18 +101,18 @@ def main():
                 else:
                     error_msg = (
                         "Dependencies (vendor folder) not found.\n\n"
-                        "Please ensure the 'vendor' folder is in the same directory as HRCert.exe\n\n"
+                        "Please ensure the 'vendor' folder is in the same directory as AutoCert.exe\n\n"
                         "Or install Composer from: https://getcomposer.org/"
                     )
-                    show_error("Missing Dependencies - HRCert", error_msg)
+                    show_error("Missing Dependencies - AutoCert", error_msg)
                     return 1
             except (FileNotFoundError, subprocess.TimeoutExpired):
                 error_msg = (
                     "Dependencies (vendor folder) not found.\n\n"
-                    "Please ensure the 'vendor' folder is in the same directory as HRCert.exe\n\n"
+                    "Please ensure the 'vendor' folder is in the same directory as AutoCert.exe\n\n"
                     "Or install Composer from: https://getcomposer.org/"
                 )
-                show_error("Missing Dependencies - HRCert", error_msg)
+                show_error("Missing Dependencies - AutoCert", error_msg)
                 return 1
     
     # Setup database
