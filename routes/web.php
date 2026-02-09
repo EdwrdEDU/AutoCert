@@ -11,7 +11,7 @@ use App\Http\Controllers\CertificateController;
 */
 
 Route::get('/', function () {
-    return redirect()->route('templates.index');
+    return view('landing');
 });
 
 // Template Routes
